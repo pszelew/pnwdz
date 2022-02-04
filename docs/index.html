@@ -36,6 +36,7 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
+          <img class="logo-pwr" src="img/pwr.png">
           <a href="https://pwr.edu.pl/">PWr</a>
         </form>
       </div>
@@ -67,9 +68,10 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Spatial data is fun!</h1>
-              <p>To create this project we used more than 17k job offers from <a href="https://pracuj.pl">pracuj.pl</a>
+              <p>To create this project we used more than 17k job offers from <a href="https://pracuj.pl"
+                  target="_blank">pracuj.pl</a>
                 and
-                <a href="https://oferty.praca.gov.pl/">praca.gov.pl</a>.
+                <a href="https://oferty.praca.gov.pl/" target="_blank">praca.gov.pl</a>.
               </p>
               <p>
                 Furthermore, we have processed the unemployment statistics in Poland from November 2021 and <br> PKB per
@@ -88,7 +90,7 @@
               <h1>Try it yourself</h1>
               <br>
               <p>
-                <a href="https://geopandas.org/en/stable/">
+                <a href="https://geopandas.org/en/stable/" target="_blank">
                   GeoPandas
                 </a>
                 <br>
@@ -97,7 +99,7 @@
                 GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
                 <br>
                 <br>
-                <a href="https://python-visualization.github.io/folium/">
+                <a href="https://python-visualization.github.io/folium/" target="_blank">
                   Folium
                 </a>
                 <br>
@@ -157,30 +159,60 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Job offers distribution
             <br>
-            <a href="https://pszelew.github.io/przetw-dan-przestrz/map_country_markers.html">Check this out!</a>
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/map_state_voivodeship_markers.html"
+              target="_blank">Check this
+              out!</a>
           </h2>
-          <p class="lead">We have just plotted 17k job offers, based on their localization, on a map. We can observe
-            that job offers are grouped in the largest Polish cities like Warszawa, Krawków, Poznań, etc.</p>
+          <p class="lead">We have plotted 17k job offers, based on their localization, on a map. We have aggregated them
+            per district and voivodeship. We can observe that job offers are grouped in the largest Polish cities like
+            Warszawa,
+            Kraków, Poznań, etc. We can see that in the eastern voivodeships there is not a lot of job offers.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <img class="featurette-image img-fluid mx-auto" alt="500x500" style="width: 500px; height: 500px;"
-            src="img/map_country_markers.png" data-holder-rendered="true">
+            src="img/map_state_voivodeship_markers.png" data-holder-rendered="true">
         </div>
       </div>
 
 
 
-
-
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading"> How job offers distribution affects unemployment rate?
+          <h2 class="featurette-heading">Job distribution in Wrocław
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/map_wroclaw_markers.html" target="_blank">
+              <br>
+              Check this out!
+            </a>
+          </h2>
+          <p class="lead">We have plotted job offers in Wrocław and aggregated them per city district. We can clearly
+            see that if we want to get a job, we probably want to look for it in a city center or in the southern
+            district:
+            Krzyki.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" alt="500x500" style="width: 500px; height: 500px;"
+            src="img/map_wroclaw_markers.png" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> How job offers distribution affects unemployment rate
             <br>
-            <a href="https://pszelew.github.io/przetw-dan-przestrz/distance_closest_job_simp.html">Check this out!</a>
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/distance_closest_job_simp.html" target="_blank">
+              <br>
+              Check this out!
+            </a>
           </h2>
           <p class="lead">We have split the map of Poland into 23870 hexagons and have found the closest job offer to
-            their centroids. We have also used unemployment rate data per each district in Poland to check if the
+            their centroids. We have also used unemployment rate data per each district and voivodeship in Poland to
+            check if the
             distribution of job offers affects it.
 
             We think that there is a strong correlation between the unemployment rate and the lack of job offers nearby.
@@ -194,43 +226,43 @@
         </div>
       </div>
 
+
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">17k offers map<a
-              href="https://pszelew.github.io/przetw-dan-przestrz/map_country_markers.html">Check this out!</a>
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Calculating Gini coefficient based on mean salary
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/map_gini_index_states_voivodeships.html"
+              target="_blank">
+              <br>
+              Check this out!
+            </a>
           </h2>
-          <p class="lead">We have plotted 17k job offers on a map. We can observe that job offers are gruoped in the
-            largest polish cities like Warszawa, Krawków, Poznań etc.</p>
+          <p class="lead">Presented maps are showing the calculated Gini Coefficient for average wages offered for job
+            offerings present in the prepared dataset. Gini Coefficient shows a degree of disproportion in each given
+            territorial unit and so, in the considered case, it shows the disproportion in the offered salaries. Content
+            of the maps is to be interpreted as the darker the color is the higher the disproportion (of salaries) is in
+            a given territorial unit. It should be noted that on the map showing states there are values of -1. In such
+            case, it is not a calculated value of the Gini Coefficient but a placeholder showing that there were no data
+            available (job offering with denoted salary) for this particular state. When it comes to interesting stuff
+            it's worth mentioning that there is a big disproportion in the podlaskie voivodeship caused mainly by its
+            biggest city Białystok. Another interesting thing is the fact that the pomorskie voivodeship seems to be
+            more disproportionate than the mazowieckie and the dolnośląskie, which on the other hand are on almost the
+            same level.
+          </p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-            style="width: 500px; height: 500px;"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17ec11a1372%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17ec11a1372%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.13333129882812%22%20y%3D%22261.7%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="featurette-image img-fluid mx-auto" alt="500x500" style="width: 500px; height: 500px;"
+            src="img/map_gini_index_states_voivodeships.png" data-holder-rendered="true">
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor
-            fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-            commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-            tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-            style="width: 500px; height: 500px;"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17ec11a1373%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17ec11a1373%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.13333129882812%22%20y%3D%22261.7%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
-        </div>
-      </div>
 
       <hr class="featurette-divider">
+
+
+
 
       <!-- /END THE FEATURETTES -->
 

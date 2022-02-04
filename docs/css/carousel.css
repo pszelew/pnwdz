@@ -26,6 +26,10 @@ a {
   height: 250px;
 }
 
+.logo-pwr {
+  width: 50px;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -35,6 +39,8 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
