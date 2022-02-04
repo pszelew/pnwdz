@@ -36,6 +36,7 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
+          <img class="logo-pwr" src="img/pwr.png">
           <a href="https://pwr.edu.pl/">PWr</a>
         </form>
       </div>
@@ -67,9 +68,10 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Spatial data is fun!</h1>
-              <p>To create this project we used more than 17k job offers from <a href="https://pracuj.pl">pracuj.pl</a>
+              <p>To create this project we used more than 17k job offers from <a href="https://pracuj.pl"
+                  target="_blank">pracuj.pl</a>
                 and
-                <a href="https://oferty.praca.gov.pl/">praca.gov.pl</a>.
+                <a href="https://oferty.praca.gov.pl/" target="_blank">praca.gov.pl</a>.
               </p>
               <p>
                 Furthermore, we have processed the unemployment statistics in Poland from November 2021 and <br> PKB per
@@ -88,7 +90,7 @@
               <h1>Try it yourself</h1>
               <br>
               <p>
-                <a href="https://geopandas.org/en/stable/">
+                <a href="https://geopandas.org/en/stable/" target="_blank">
                   GeoPandas
                 </a>
                 <br>
@@ -97,7 +99,7 @@
                 GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
                 <br>
                 <br>
-                <a href="https://python-visualization.github.io/folium/">
+                <a href="https://python-visualization.github.io/folium/" target="_blank">
                   Folium
                 </a>
                 <br>
@@ -201,10 +203,12 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"> How job offers distribution affects unemployment rate?
+          <h2 class="featurette-heading"> How job offers distribution affects unemployment rate
             <br>
-            <a href="https://pszelew.github.io/przetw-dan-przestrz/distance_closest_job_simp.html" target="_blank">Check
-              this out!</a>
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/distance_closest_job_simp.html" target="_blank">
+              <br>
+              Check this out!
+            </a>
           </h2>
           <p class="lead">We have split the map of Poland into 23870 hexagons and have found the closest job offer to
             their centroids. We have also used unemployment rate data per each district and voivodeship in Poland to
@@ -224,10 +228,35 @@
 
 
 
-
-
-
       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Calculating Gini coefficient based on mean salary
+            <a href="https://pszelew.github.io/przetw-dan-przestrz/map_gini_index_states_voivodeships.html"
+              target="_blank">
+              <br>
+              Check this out!
+            </a>
+          </h2>
+          <p class="lead">Presented maps are showing the calculated Gini Coefficient for average wages offered for job
+            offerings present in the prepared dataset. Gini Coefficient shows a degree of disproportion in each given
+            territorial unit and so, in the considered case, it shows the disproportion in the offered salaries. Content
+            of the maps is to be interpreted as the darker the color is the higher the disproportion (of salaries) is in
+            a given territorial unit. It should be noted that on the map showing states there are values of -1. In such
+            case, it is not a calculated value of the Gini Coefficient but a placeholder showing that there were no data
+            available (job offering with denoted salary) for this particular state. When it comes to interesting stuff
+            it's worth mentioning that there is a big disproportion in the podlaskie voivodeship caused mainly by its
+            biggest city Białystok. Another interesting thing is the fact that the pomorskie voivodeship seems to be
+            more disproportionate than the mazowieckie and the dolnośląskie, which on the other hand are on almost the
+            same level.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" alt="500x500" style="width: 500px; height: 500px;"
+            src="img/map_gini_index_states_voivodeships.png" data-holder-rendered="true">
+        </div>
+      </div>
 
 
       <hr class="featurette-divider">
