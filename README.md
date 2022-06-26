@@ -1,5 +1,5 @@
 # WorkInjustice
 
 ## Main Page:
-https://pszelew.github.io/przetw-dan-przestrz/
+https://pszelew.github.io/pnwdz/
 
